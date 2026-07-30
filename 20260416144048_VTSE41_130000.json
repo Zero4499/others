@@ -1,22 +1,22 @@
 {
   "Control": {
     "Title": "津波警報・注意報・予報a",
-    "DateTime": "2026-04-20T08:08:18Z",
+    "DateTime": "2026-04-20T07:55:37Z",
     "Status": "通常",
     "EditorialOffice": "気象庁本庁",
     "PublishingOffice": "気象庁"
   },
   "Head": {
     "Title": "津波警報・津波注意報・津波予報",
-    "ReportDateTime": "2026-04-20T17:08:00+09:00",
-    "TargetDateTime": "2026-04-20T17:08:00+09:00",
+    "ReportDateTime": "2026-04-20T16:55:00+09:00",
+    "TargetDateTime": "2026-04-20T16:55:00+09:00",
     "EventID": "20260420165303",
     "InfoType": "発表",
     "Serial": null,
     "InfoKind": "津波警報・注意報・予報",
     "InfoKindVersion": "1.0_1",
     "Headline": {
-      "Text": "津波警報を切り替えました。\nただちに避難してください。",
+      "Text": "津波警報を発表しました。\nただちに避難してください。",
       "Information": {
         "Item": {
           "Kind": {
@@ -26,16 +26,12 @@
           "Areas": {
             "Area": [
               {
-                "Name": "北海道太平洋沿岸中部",
-                "Code": "101"
-              },
-              {
-                "Name": "青森県太平洋沿岸",
-                "Code": "201"
-              },
-              {
                 "Name": "岩手県",
                 "Code": "210"
+              },
+              {
+                "Name": "北海道太平洋沿岸中部",
+                "Code": "101"
               }
             ]
           }
@@ -64,9 +60,9 @@
                 "enName": "Tsunami Warning"
               },
               "LastKind": {
-                "Name": "津波警報",
-                "Code": "51",
-                "enName": "Tsunami Warning"
+                "Name": "津波なし",
+                "Code": "00",
+                "enName": "No Tsunami risk"
               }
             },
             "FirstHeight": {
@@ -74,32 +70,6 @@
             },
             "MaxHeight": {
               "TsunamiHeight": "3"
-            }
-          },
-          {
-            "Area": {
-              "Name": "青森県太平洋沿岸",
-              "Code": "201",
-              "enName": "PACIFIC COAST OF AOMORI PREF."
-            },
-            "Category": {
-              "Kind": {
-                "Name": "津波警報",
-                "Code": "51",
-                "enName": "Tsunami Warning"
-              },
-              "LastKind": {
-                "Name": "津波注意報",
-                "Code": "62",
-                "enName": "Tsunami Advisory"
-              }
-            },
-            "FirstHeight": {
-              "ArrivalTime": "2026-04-20T17:20:00+09:00"
-            },
-            "MaxHeight": {
-              "TsunamiHeight": "3",
-              "Revise": "更新"
             }
           },
           {
@@ -115,14 +85,14 @@
                 "enName": "Tsunami Warning"
               },
               "LastKind": {
-                "Name": "津波警報",
-                "Code": "51",
-                "enName": "Tsunami Warning"
+                "Name": "津波なし",
+                "Code": "00",
+                "enName": "No Tsunami risk"
               }
             },
             "FirstHeight": {
-              "Condition": "津波到達中と推測",
-              "Revise": "更新"
+              "ArrivalTime": "2026-04-20T17:00:00+09:00",
+              "Condition": "ただちに津波来襲と予測"
             },
             "MaxHeight": {
               "TsunamiHeight": "3"
@@ -141,9 +111,9 @@
                 "enName": "Tsunami Advisory"
               },
               "LastKind": {
-                "Name": "津波注意報",
-                "Code": "62",
-                "enName": "Tsunami Advisory"
+                "Name": "津波なし",
+                "Code": "00",
+                "enName": "No Tsunami risk"
               }
             },
             "FirstHeight": {
@@ -166,9 +136,9 @@
                 "enName": "Tsunami Advisory"
               },
               "LastKind": {
-                "Name": "津波注意報",
-                "Code": "62",
-                "enName": "Tsunami Advisory"
+                "Name": "津波なし",
+                "Code": "00",
+                "enName": "No Tsunami risk"
               }
             },
             "FirstHeight": {
@@ -180,9 +150,9 @@
           },
           {
             "Area": {
-              "Name": "青森県日本海沿岸",
-              "Code": "200",
-              "enName": "JAPAN SEA COAST OF AOMORI PREF."
+              "Name": "青森県太平洋沿岸",
+              "Code": "201",
+              "enName": "PACIFIC COAST OF AOMORI PREF."
             },
             "Category": {
               "Kind": {
@@ -191,18 +161,16 @@
                 "enName": "Tsunami Advisory"
               },
               "LastKind": {
-                "Name": "津波予報（若干の海面変動）",
-                "Code": "71",
-                "enName": "Tsunami Forecast"
+                "Name": "津波なし",
+                "Code": "00",
+                "enName": "No Tsunami risk"
               }
             },
             "FirstHeight": {
-              "ArrivalTime": "2026-04-20T18:00:00+09:00",
-              "Revise": "追加"
+              "ArrivalTime": "2026-04-20T17:20:00+09:00"
             },
             "MaxHeight": {
-              "TsunamiHeight": "1",
-              "Revise": "更新"
+              "TsunamiHeight": "1"
             }
           },
           {
@@ -218,9 +186,9 @@
                 "enName": "Tsunami Advisory"
               },
               "LastKind": {
-                "Name": "津波注意報",
-                "Code": "62",
-                "enName": "Tsunami Advisory"
+                "Name": "津波なし",
+                "Code": "00",
+                "enName": "No Tsunami risk"
               }
             },
             "FirstHeight": {
@@ -243,9 +211,9 @@
                 "enName": "Tsunami Advisory"
               },
               "LastKind": {
-                "Name": "津波注意報",
-                "Code": "62",
-                "enName": "Tsunami Advisory"
+                "Name": "津波なし",
+                "Code": "00",
+                "enName": "No Tsunami risk"
               }
             },
             "FirstHeight": {
@@ -268,9 +236,31 @@
                 "enName": "Tsunami Forecast"
               },
               "LastKind": {
+                "Name": "津波なし",
+                "Code": "00",
+                "enName": "No Tsunami risk"
+              }
+            },
+            "MaxHeight": {
+              "TsunamiHeight": "\u003C0.2"
+            }
+          },
+          {
+            "Area": {
+              "Name": "青森県日本海沿岸",
+              "Code": "200",
+              "enName": "JAPAN SEA COAST OF AOMORI PREF."
+            },
+            "Category": {
+              "Kind": {
                 "Name": "津波予報（若干の海面変動）",
                 "Code": "71",
                 "enName": "Tsunami Forecast"
+              },
+              "LastKind": {
+                "Name": "津波なし",
+                "Code": "00",
+                "enName": "No Tsunami risk"
               }
             },
             "MaxHeight": {
@@ -290,9 +280,9 @@
                 "enName": "Tsunami Forecast"
               },
               "LastKind": {
-                "Name": "津波予報（若干の海面変動）",
-                "Code": "71",
-                "enName": "Tsunami Forecast"
+                "Name": "津波なし",
+                "Code": "00",
+                "enName": "No Tsunami risk"
               }
             },
             "MaxHeight": {
@@ -312,9 +302,9 @@
                 "enName": "Tsunami Forecast"
               },
               "LastKind": {
-                "Name": "津波予報（若干の海面変動）",
-                "Code": "71",
-                "enName": "Tsunami Forecast"
+                "Name": "津波なし",
+                "Code": "00",
+                "enName": "No Tsunami risk"
               }
             },
             "MaxHeight": {
@@ -334,9 +324,9 @@
                 "enName": "Tsunami Forecast"
               },
               "LastKind": {
-                "Name": "津波予報（若干の海面変動）",
-                "Code": "71",
-                "enName": "Tsunami Forecast"
+                "Name": "津波なし",
+                "Code": "00",
+                "enName": "No Tsunami risk"
               }
             },
             "MaxHeight": {
@@ -356,105 +346,13 @@
                 "enName": "Tsunami Forecast"
               },
               "LastKind": {
-                "Name": "津波予報（若干の海面変動）",
-                "Code": "71",
-                "enName": "Tsunami Forecast"
+                "Name": "津波なし",
+                "Code": "00",
+                "enName": "No Tsunami risk"
               }
             },
             "MaxHeight": {
               "TsunamiHeight": "\u003C0.2"
-            }
-          },
-          {
-            "Area": {
-              "Name": "小笠原諸島",
-              "Code": "321",
-              "enName": "OGASAWARA ISLANDS"
-            },
-            "Category": {
-              "Kind": {
-                "Name": "津波予報（若干の海面変動）",
-                "Code": "71",
-                "enName": "Tsunami Forecast"
-              },
-              "LastKind": {
-                "Name": "津波なし",
-                "Code": "00",
-                "enName": "No Tsunami risk"
-              }
-            },
-            "MaxHeight": {
-              "TsunamiHeight": "\u003C0.2",
-              "Revise": "追加"
-            }
-          },
-          {
-            "Area": {
-              "Name": "相模湾・三浦半島",
-              "Code": "330",
-              "enName": "SAGAMI BAY AND MIURA PENINSULA"
-            },
-            "Category": {
-              "Kind": {
-                "Name": "津波予報（若干の海面変動）",
-                "Code": "71",
-                "enName": "Tsunami Forecast"
-              },
-              "LastKind": {
-                "Name": "津波なし",
-                "Code": "00",
-                "enName": "No Tsunami risk"
-              }
-            },
-            "MaxHeight": {
-              "TsunamiHeight": "\u003C0.2",
-              "Revise": "追加"
-            }
-          },
-          {
-            "Area": {
-              "Name": "徳島県",
-              "Code": "580",
-              "enName": "TOKUSHIMA PREF."
-            },
-            "Category": {
-              "Kind": {
-                "Name": "津波予報（若干の海面変動）",
-                "Code": "71",
-                "enName": "Tsunami Forecast"
-              },
-              "LastKind": {
-                "Name": "津波なし",
-                "Code": "00",
-                "enName": "No Tsunami risk"
-              }
-            },
-            "MaxHeight": {
-              "TsunamiHeight": "\u003C0.2",
-              "Revise": "追加"
-            }
-          },
-          {
-            "Area": {
-              "Name": "高知県",
-              "Code": "610",
-              "enName": "KOCHI PREF."
-            },
-            "Category": {
-              "Kind": {
-                "Name": "津波予報（若干の海面変動）",
-                "Code": "71",
-                "enName": "Tsunami Forecast"
-              },
-              "LastKind": {
-                "Name": "津波なし",
-                "Code": "00",
-                "enName": "No Tsunami risk"
-              }
-            },
-            "MaxHeight": {
-              "TsunamiHeight": "\u003C0.2",
-              "Revise": "追加"
             }
           }
         ]
@@ -476,7 +374,7 @@
             "enName": "Off the Coast of Sanriku"
           }
         },
-        "Magnitude": "7.5"
+        "Magnitude": "7.4"
       }
     ],
     "Comments": {
