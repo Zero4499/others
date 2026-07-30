@@ -1,28 +1,96 @@
 {
-  "datetime": "2026-04-16T13:49:34+09:00",
+  "datetime": "2026-04-16T13:50:10+09:00",
   "controlStatus": "訓練",
   "Control": {
-    "Title": "津波警報・注意報・予報a",
-    "DateTime": "2026-04-16T04:49:34Z",
+    "Title": "津波情報a",
+    "DateTime": "2026-04-16T04:50:10Z",
     "Status": "訓練",
     "EditorialOffice": "気象庁本庁",
     "PublishingOffice": "気象庁"
   },
   "Head": {
-    "Title": "大津波警報・津波警報・津波注意報・津波予報",
-    "ReportDateTime": "2026-04-16T13:49:00+09:00",
-    "TargetDateTime": "2026-04-16T13:49:00+09:00",
+    "Title": "各地の満潮時刻・津波到達予想時刻に関する情報",
+    "ReportDateTime": "2026-04-16T13:50:00+09:00",
+    "TargetDateTime": "2026-04-16T13:50:00+09:00",
     "EventID": "20260416133500",
     "InfoType": "発表",
-    "Serial": null,
-    "InfoKind": "津波警報・注意報・予報",
+    "Serial": "3",
+    "InfoKind": "津波情報",
     "InfoKindVersion": "1.0_1",
     "Headline": {
-      "Text": "＊＊＊これは訓練です＊＊＊\n東日本大震災クラスの津波が来襲します。\n大津波警報・津波警報を切り替えました。\nただちに避難してください。"
+      "Text": "＊＊＊これは訓練です＊＊＊\n各地の満潮時刻と津波到達予想時刻をお知らせします。"
     }
   },
   "Body": {
     "Tsunami": {
+      "Observation": {
+        "Item": [
+          {
+            "Area": {
+              "Name": "伊豆諸島",
+              "Code": "320"
+            },
+            "Station": [
+              {
+                "Name": "三宅島坪田",
+                "Code": "32002",
+                "FirstHeight": {
+                  "Condition": "欠測"
+                },
+                "MaxHeight": {
+                  "Condition": "欠測"
+                },
+                "Kana": "みやけじまつぼた",
+                "latlon": {
+                  "lat": 34.05,
+                  "lon": 139.55
+                }
+              }
+            ]
+          },
+          {
+            "Area": {
+              "Name": "高知県",
+              "Code": "610"
+            },
+            "Station": [
+              {
+                "Name": "室戸市室戸岬",
+                "Code": "61001",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T13:38:00+09:00",
+                  "Initial": "押し"
+                },
+                "MaxHeight": {
+                  "DateTime": "2026-04-16T13:38:00+09:00",
+                  "Condition": "重要",
+                  "TsunamiHeight": "6.0"
+                },
+                "Kana": "むろとしむろとみさき",
+                "latlon": {
+                  "lat": 33.2667,
+                  "lon": 134.1667
+                }
+              },
+              {
+                "Name": "土佐清水",
+                "Code": "61003",
+                "FirstHeight": {
+                  "Condition": "欠測"
+                },
+                "MaxHeight": {
+                  "Condition": "欠測"
+                },
+                "Kana": "とさしみず",
+                "latlon": {
+                  "lat": 32.7833,
+                  "lon": 132.9667
+                }
+              }
+            ]
+          }
+        ]
+      },
       "Forecast": {
         "CodeDefine": "津波予報区",
         "Item": [
@@ -46,10 +114,95 @@
               "Revise": "更新"
             },
             "MaxHeight": {
-              "Condition": "重要",
               "Revise": "更新",
               "TsunamiHeight": "5"
-            }
+            },
+            "Station": [
+              {
+                "Name": "伊豆大島岡田",
+                "Code": "32001",
+                "HighTideDateTime": "2026-04-16T16:14:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:30:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "いずおおしまおかだ",
+                "latlon": {
+                  "lat": 34.7833,
+                  "lon": 139.3833
+                }
+              },
+              {
+                "Name": "三宅島坪田",
+                "Code": "32002",
+                "HighTideDateTime": "2026-04-16T16:33:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:20:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "みやけじまつぼた",
+                "latlon": {
+                  "lat": 34.05,
+                  "lon": 139.55
+                }
+              },
+              {
+                "Name": "八丈島八重根",
+                "Code": "32003",
+                "HighTideDateTime": "2026-04-16T16:53:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:20:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "はちじょうじまやえね",
+                "latlon": {
+                  "lat": 33.1,
+                  "lon": 139.7833
+                }
+              },
+              {
+                "Name": "神津島神津島港",
+                "Code": "32004",
+                "HighTideDateTime": "2026-04-16T16:53:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:20:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "こうづしまこうづしまこう",
+                "latlon": {
+                  "lat": 34.2167,
+                  "lon": 139.1333
+                }
+              },
+              {
+                "Name": "三宅島阿古",
+                "Code": "32005",
+                "HighTideDateTime": "2026-04-16T16:35:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:20:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "みやけじまあこ",
+                "latlon": {
+                  "lat": 34.0667,
+                  "lon": 139.4833
+                }
+              },
+              {
+                "Name": "八丈島神湊",
+                "Code": "32006",
+                "HighTideDateTime": "2026-04-16T16:44:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:20:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "はちじょうじまかみなと",
+                "latlon": {
+                  "lat": 33.1333,
+                  "lon": 139.8
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -71,10 +224,137 @@
               "Revise": "更新"
             },
             "MaxHeight": {
-              "Condition": "重要",
               "Revise": "更新",
               "TsunamiHeight": "5"
-            }
+            },
+            "Station": [
+              {
+                "Name": "沼津市内浦",
+                "Code": "38001",
+                "HighTideDateTime": "2026-04-16T16:58:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:20:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "ぬまづしうちうら",
+                "latlon": {
+                  "lat": 35.0167,
+                  "lon": 138.8833
+                }
+              },
+              {
+                "Name": "清水",
+                "Code": "38002",
+                "HighTideDateTime": "2026-04-16T17:00:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:20:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "しみず",
+                "latlon": {
+                  "lat": 35.0167,
+                  "lon": 138.5167
+                }
+              },
+              {
+                "Name": "御前崎",
+                "Code": "38005",
+                "HighTideDateTime": "2026-04-16T16:58:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:20:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "おまえざき",
+                "latlon": {
+                  "lat": 34.6167,
+                  "lon": 138.2167
+                }
+              },
+              {
+                "Name": "舞阪",
+                "Code": "38006",
+                "HighTideDateTime": "2026-04-16T17:25:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:20:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "まいさか",
+                "latlon": {
+                  "lat": 34.6833,
+                  "lon": 137.6167
+                }
+              },
+              {
+                "Name": "南伊豆町手石港",
+                "Code": "38007",
+                "HighTideDateTime": "2026-04-16T16:54:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:20:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "みなみいずちょうていしこう",
+                "latlon": {
+                  "lat": 34.6333,
+                  "lon": 138.8833
+                }
+              },
+              {
+                "Name": "下田港",
+                "Code": "38020",
+                "HighTideDateTime": "2026-04-16T16:44:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:20:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "しもだこう",
+                "latlon": {
+                  "lat": 34.6833,
+                  "lon": 138.9667
+                }
+              },
+              {
+                "Name": "伊東",
+                "Code": "38030",
+                "HighTideDateTime": "2026-04-16T16:22:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:30:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "いとう",
+                "latlon": {
+                  "lat": 34.9,
+                  "lon": 139.1333
+                }
+              },
+              {
+                "Name": "西伊豆町田子",
+                "Code": "38031",
+                "HighTideDateTime": "2026-04-16T17:00:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:20:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "にしいずちょうたご",
+                "latlon": {
+                  "lat": 34.8,
+                  "lon": 138.7667
+                }
+              },
+              {
+                "Name": "焼津",
+                "Code": "38032",
+                "HighTideDateTime": "2026-04-16T16:54:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:20:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "やいづ",
+                "latlon": {
+                  "lat": 34.8667,
+                  "lon": 138.3333
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -95,10 +375,53 @@
               "Condition": "津波到達中と推測"
             },
             "MaxHeight": {
-              "Condition": "重要",
               "Revise": "更新",
               "TsunamiHeight": "5"
-            }
+            },
+            "Station": [
+              {
+                "Name": "鳥羽",
+                "Code": "40001",
+                "HighTideDateTime": "2026-04-16T17:27:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:30:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "とば",
+                "latlon": {
+                  "lat": 34.4833,
+                  "lon": 136.8167
+                }
+              },
+              {
+                "Name": "尾鷲",
+                "Code": "40002",
+                "HighTideDateTime": "2026-04-16T17:13:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:10:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "おわせ",
+                "latlon": {
+                  "lat": 34.0833,
+                  "lon": 136.2
+                }
+              },
+              {
+                "Name": "熊野市遊木",
+                "Code": "40003",
+                "HighTideDateTime": "2026-04-16T17:14:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:00:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "くまのしゆき",
+                "latlon": {
+                  "lat": 33.9333,
+                  "lon": 136.1667
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -120,10 +443,25 @@
               "Revise": "更新"
             },
             "MaxHeight": {
-              "Condition": "重要",
               "Revise": "更新",
               "TsunamiHeight": "5"
-            }
+            },
+            "Station": [
+              {
+                "Name": "洲本",
+                "Code": "52202",
+                "HighTideDateTime": "2026-04-16T18:02:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:20:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "すもと",
+                "latlon": {
+                  "lat": 34.35,
+                  "lon": 134.9
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -144,10 +482,78 @@
               "Condition": "津波到達中と推測"
             },
             "MaxHeight": {
-              "Condition": "重要",
               "Revise": "更新",
               "TsunamiHeight": "10"
-            }
+            },
+            "Station": [
+              {
+                "Name": "那智勝浦町浦神",
+                "Code": "53001",
+                "HighTideDateTime": "2026-04-16T17:16:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:00:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "なちかつうらちょううらがみ",
+                "latlon": {
+                  "lat": 33.5667,
+                  "lon": 135.9
+                }
+              },
+              {
+                "Name": "串本町袋港",
+                "Code": "53002",
+                "HighTideDateTime": "2026-04-16T17:20:00+09:00",
+                "FirstHeight": {
+                  "Condition": "津波到達中と推測"
+                },
+                "Kana": "くしもとちょうふくろこう",
+                "latlon": {
+                  "lat": 33.4833,
+                  "lon": 135.7667
+                }
+              },
+              {
+                "Name": "和歌山",
+                "Code": "53004",
+                "HighTideDateTime": "2026-04-16T17:44:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:20:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "わかやま",
+                "latlon": {
+                  "lat": 34.2167,
+                  "lon": 135.15
+                }
+              },
+              {
+                "Name": "御坊市祓井戸",
+                "Code": "53006",
+                "HighTideDateTime": "2026-04-16T17:24:00+09:00",
+                "FirstHeight": {
+                  "Condition": "津波到達中と推測"
+                },
+                "Kana": "ごぼうしはらいど",
+                "latlon": {
+                  "lat": 33.85,
+                  "lon": 135.1667
+                }
+              },
+              {
+                "Name": "白浜町堅田",
+                "Code": "53007",
+                "HighTideDateTime": "2026-04-16T17:20:00+09:00",
+                "FirstHeight": {
+                  "Condition": "津波到達中と推測"
+                },
+                "Kana": "しらはまちょうかたた",
+                "latlon": {
+                  "lat": 33.6833,
+                  "lon": 135.3833
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -168,10 +574,38 @@
               "Condition": "津波到達中と推測"
             },
             "MaxHeight": {
-              "Condition": "重要",
               "Revise": "更新",
               "TsunamiHeight": "≧10"
-            }
+            },
+            "Station": [
+              {
+                "Name": "小松島",
+                "Code": "58001",
+                "HighTideDateTime": "2026-04-16T17:37:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:20:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "こまつしま",
+                "latlon": {
+                  "lat": 34.0167,
+                  "lon": 134.5833
+                }
+              },
+              {
+                "Name": "徳島由岐",
+                "Code": "58002",
+                "HighTideDateTime": "2026-04-16T17:22:00+09:00",
+                "FirstHeight": {
+                  "Condition": "津波到達中と推測"
+                },
+                "Kana": "とくしまゆき",
+                "latlon": {
+                  "lat": 33.7667,
+                  "lon": 134.6
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -189,14 +623,79 @@
               }
             },
             "FirstHeight": {
-              "Condition": "第１波の到達を確認",
-              "Revise": "更新"
+              "Condition": "第１波の到達を確認"
             },
             "MaxHeight": {
-              "Condition": "重要",
               "Revise": "更新",
               "TsunamiHeight": "≧10"
-            }
+            },
+            "Station": [
+              {
+                "Name": "室戸市室戸岬",
+                "Code": "61001",
+                "HighTideDateTime": "2026-04-16T17:26:00+09:00",
+                "FirstHeight": {
+                  "Condition": "第１波の到達を確認"
+                },
+                "Kana": "むろとしむろとみさき",
+                "latlon": {
+                  "lat": 33.2667,
+                  "lon": 134.1667
+                }
+              },
+              {
+                "Name": "高知",
+                "Code": "61002",
+                "HighTideDateTime": "2026-04-16T17:29:00+09:00",
+                "FirstHeight": {
+                  "Condition": "津波到達中と推測"
+                },
+                "Kana": "こうち",
+                "latlon": {
+                  "lat": 33.5,
+                  "lon": 133.5667
+                }
+              },
+              {
+                "Name": "土佐清水",
+                "Code": "61003",
+                "HighTideDateTime": "2026-04-16T17:33:00+09:00",
+                "FirstHeight": {
+                  "Condition": "津波到達中と推測"
+                },
+                "Kana": "とさしみず",
+                "latlon": {
+                  "lat": 32.7833,
+                  "lon": 132.9667
+                }
+              },
+              {
+                "Name": "須崎港",
+                "Code": "61020",
+                "HighTideDateTime": "2026-04-16T17:27:00+09:00",
+                "FirstHeight": {
+                  "Condition": "津波到達中と推測"
+                },
+                "Kana": "すさきこう",
+                "latlon": {
+                  "lat": 33.3833,
+                  "lon": 133.3
+                }
+              },
+              {
+                "Name": "中土佐町久礼港",
+                "Code": "61030",
+                "HighTideDateTime": "2026-04-16T17:28:00+09:00",
+                "FirstHeight": {
+                  "Condition": "津波到達中と推測"
+                },
+                "Kana": "なかとさちょうくれこう",
+                "latlon": {
+                  "lat": 33.3333,
+                  "lon": 133.25
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -217,10 +716,53 @@
               "Condition": "津波到達中と推測"
             },
             "MaxHeight": {
-              "Condition": "重要",
               "Revise": "更新",
               "TsunamiHeight": "10"
-            }
+            },
+            "Station": [
+              {
+                "Name": "日向市細島",
+                "Code": "76001",
+                "HighTideDateTime": "2026-04-16T17:40:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:00:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "ひゆうがしほそしま",
+                "latlon": {
+                  "lat": 32.45,
+                  "lon": 131.6667
+                }
+              },
+              {
+                "Name": "日南市油津",
+                "Code": "76002",
+                "HighTideDateTime": "2026-04-16T17:38:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:10:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "にちなんしあぶらつ",
+                "latlon": {
+                  "lat": 31.5833,
+                  "lon": 131.4167
+                }
+              },
+              {
+                "Name": "宮崎港",
+                "Code": "76020",
+                "HighTideDateTime": "2026-04-16T17:36:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:20:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "みやざきこう",
+                "latlon": {
+                  "lat": 31.9,
+                  "lon": 131.45
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -242,10 +784,39 @@
               "Revise": "更新"
             },
             "MaxHeight": {
-              "Condition": "重要",
               "Revise": "更新",
               "TsunamiHeight": "5"
-            }
+            },
+            "Station": [
+              {
+                "Name": "南大隅町大泊",
+                "Code": "77002",
+                "HighTideDateTime": "2026-04-16T18:19:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:40:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "みなみおおすみちょうおおどまり",
+                "latlon": {
+                  "lat": 31.0167,
+                  "lon": 130.6833
+                }
+              },
+              {
+                "Name": "志布志港",
+                "Code": "77020",
+                "HighTideDateTime": "2026-04-16T17:45:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:30:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "しぶしこう",
+                "latlon": {
+                  "lat": 31.4833,
+                  "lon": 131.1167
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -267,10 +838,39 @@
               "Revise": "更新"
             },
             "MaxHeight": {
-              "Condition": "重要",
               "Revise": "更新",
               "TsunamiHeight": "5"
-            }
+            },
+            "Station": [
+              {
+                "Name": "種子島西之表",
+                "Code": "77102",
+                "HighTideDateTime": "2026-04-16T18:22:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:30:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "たねがしまにしのおもて",
+                "latlon": {
+                  "lat": 30.7333,
+                  "lon": 131
+                }
+              },
+              {
+                "Name": "種子島熊野",
+                "Code": "77103",
+                "HighTideDateTime": "2026-04-16T17:48:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:10:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "たねがしまくまの",
+                "latlon": {
+                  "lat": 30.4667,
+                  "lon": 130.9667
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -292,10 +892,25 @@
               "Revise": "更新"
             },
             "MaxHeight": {
-              "Condition": "重要",
               "Revise": "更新",
               "TsunamiHeight": "5"
-            }
+            },
+            "Station": [
+              {
+                "Name": "南大東漁港",
+                "Code": "80102",
+                "HighTideDateTime": "2026-04-16T18:07:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:30:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "みなみだいとうぎょこう",
+                "latlon": {
+                  "lat": 25.8667,
+                  "lon": 131.2333
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -319,7 +934,37 @@
             "MaxHeight": {
               "Revise": "更新",
               "TsunamiHeight": "3"
-            }
+            },
+            "Station": [
+              {
+                "Name": "銚子",
+                "Code": "31001",
+                "HighTideDateTime": "2026-04-16T15:37:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T15:10:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "ちょうし",
+                "latlon": {
+                  "lat": 35.75,
+                  "lon": 140.8667
+                }
+              },
+              {
+                "Name": "勝浦市興津",
+                "Code": "31002",
+                "HighTideDateTime": "2026-04-16T16:00:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:40:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "かつうらしおきつ",
+                "latlon": {
+                  "lat": 35.1333,
+                  "lon": 140.25
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -343,7 +988,23 @@
             "MaxHeight": {
               "Revise": "更新",
               "TsunamiHeight": "3"
-            }
+            },
+            "Station": [
+              {
+                "Name": "館山市布良",
+                "Code": "31101",
+                "HighTideDateTime": "2026-04-16T16:06:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:40:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "たてやましめら",
+                "latlon": {
+                  "lat": 34.9167,
+                  "lon": 139.8333
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -367,7 +1028,65 @@
             "MaxHeight": {
               "Revise": "更新",
               "TsunamiHeight": "3"
-            }
+            },
+            "Station": [
+              {
+                "Name": "東京晴海",
+                "Code": "31202",
+                "HighTideDateTime": "2026-04-16T16:27:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T15:30:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "とうきょうはるみ",
+                "latlon": {
+                  "lat": 35.65,
+                  "lon": 139.7667
+                }
+              },
+              {
+                "Name": "横須賀",
+                "Code": "31204",
+                "HighTideDateTime": "2026-04-16T16:25:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:50:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "よこすか",
+                "latlon": {
+                  "lat": 35.2833,
+                  "lon": 139.65
+                }
+              },
+              {
+                "Name": "千葉",
+                "Code": "31205",
+                "HighTideDateTime": "2026-04-16T16:23:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T15:30:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "ちば",
+                "latlon": {
+                  "lat": 35.5667,
+                  "lon": 140.05
+                }
+              },
+              {
+                "Name": "横浜",
+                "Code": "31206",
+                "HighTideDateTime": "2026-04-16T16:26:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T15:10:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "よこはま",
+                "latlon": {
+                  "lat": 35.45,
+                  "lon": 139.65
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -391,7 +1110,23 @@
             "MaxHeight": {
               "Revise": "更新",
               "TsunamiHeight": "3"
-            }
+            },
+            "Station": [
+              {
+                "Name": "父島二見",
+                "Code": "32101",
+                "HighTideDateTime": "2026-04-16T17:23:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T15:00:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "ちちじまふたみ",
+                "latlon": {
+                  "lat": 27.1,
+                  "lon": 142.2
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -415,7 +1150,51 @@
             "MaxHeight": {
               "Revise": "更新",
               "TsunamiHeight": "3"
-            }
+            },
+            "Station": [
+              {
+                "Name": "小田原",
+                "Code": "33000",
+                "HighTideDateTime": "2026-04-16T16:18:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:30:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "おだわら",
+                "latlon": {
+                  "lat": 35.2333,
+                  "lon": 139.15
+                }
+              },
+              {
+                "Name": "三浦市三崎漁港",
+                "Code": "33001",
+                "HighTideDateTime": "2026-04-16T16:17:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:30:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "みうらしみさきぎょこう",
+                "latlon": {
+                  "lat": 35.15,
+                  "lon": 139.6167
+                }
+              },
+              {
+                "Name": "三浦市油壺",
+                "Code": "33030",
+                "HighTideDateTime": "2026-04-16T16:17:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:40:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "みうらしあぶらつぼ",
+                "latlon": {
+                  "lat": 35.1667,
+                  "lon": 139.6167
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -439,7 +1218,23 @@
             "MaxHeight": {
               "Revise": "更新",
               "TsunamiHeight": "3"
-            }
+            },
+            "Station": [
+              {
+                "Name": "田原市赤羽根",
+                "Code": "39001",
+                "HighTideDateTime": "2026-04-16T17:05:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:30:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "たはらしあかばね",
+                "latlon": {
+                  "lat": 34.6,
+                  "lon": 137.1833
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -463,7 +1258,65 @@
             "MaxHeight": {
               "Revise": "更新",
               "TsunamiHeight": "3"
-            }
+            },
+            "Station": [
+              {
+                "Name": "名古屋",
+                "Code": "39101",
+                "HighTideDateTime": "2026-04-16T17:25:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T15:40:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "なごや",
+                "latlon": {
+                  "lat": 35.0833,
+                  "lon": 136.8833
+                }
+              },
+              {
+                "Name": "半田市衣浦",
+                "Code": "39102",
+                "HighTideDateTime": "2026-04-16T17:24:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T15:10:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "はんだしきぬうら",
+                "latlon": {
+                  "lat": 34.8833,
+                  "lon": 136.95
+                }
+              },
+              {
+                "Name": "四日市",
+                "Code": "39103",
+                "HighTideDateTime": "2026-04-16T17:25:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T15:20:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "よっかいち",
+                "latlon": {
+                  "lat": 34.9667,
+                  "lon": 136.6333
+                }
+              },
+              {
+                "Name": "豊橋市三河港",
+                "Code": "39120",
+                "HighTideDateTime": "2026-04-16T17:20:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T15:20:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "とよはししみかわこう",
+                "latlon": {
+                  "lat": 34.7333,
+                  "lon": 137.3167
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -487,7 +1340,37 @@
             "MaxHeight": {
               "Revise": "更新",
               "TsunamiHeight": "3"
-            }
+            },
+            "Station": [
+              {
+                "Name": "大阪天保山",
+                "Code": "51001",
+                "HighTideDateTime": "2026-04-16T18:17:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T15:20:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "おおさかてんぽうざん",
+                "latlon": {
+                  "lat": 34.65,
+                  "lon": 135.4333
+                }
+              },
+              {
+                "Name": "岬町淡輪",
+                "Code": "51002",
+                "HighTideDateTime": "2026-04-16T18:11:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:40:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "みさきちょうたんのわ",
+                "latlon": {
+                  "lat": 34.3333,
+                  "lon": 135.1833
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -511,7 +1394,37 @@
             "MaxHeight": {
               "Revise": "更新",
               "TsunamiHeight": "3"
-            }
+            },
+            "Station": [
+              {
+                "Name": "神戸",
+                "Code": "52101",
+                "HighTideDateTime": "2026-04-16T18:21:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T15:00:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "こうべ",
+                "latlon": {
+                  "lat": 34.6833,
+                  "lon": 135.1833
+                }
+              },
+              {
+                "Name": "姫路",
+                "Code": "52102",
+                "HighTideDateTime": "2026-04-16T21:49:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T15:20:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "ひめじ",
+                "latlon": {
+                  "lat": 34.7833,
+                  "lon": 134.6667
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -535,7 +1448,23 @@
             "MaxHeight": {
               "Revise": "更新",
               "TsunamiHeight": "3"
-            }
+            },
+            "Station": [
+              {
+                "Name": "玉野市宇野",
+                "Code": "56001",
+                "HighTideDateTime": "2026-04-16T22:42:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T15:30:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "たまのしうの",
+                "latlon": {
+                  "lat": 34.4833,
+                  "lon": 133.95
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -559,7 +1488,51 @@
             "MaxHeight": {
               "Revise": "更新",
               "TsunamiHeight": "3"
-            }
+            },
+            "Station": [
+              {
+                "Name": "高松",
+                "Code": "59001",
+                "HighTideDateTime": "2026-04-16T22:37:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T15:30:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "たかまつ",
+                "latlon": {
+                  "lat": 34.35,
+                  "lon": 134.05
+                }
+              },
+              {
+                "Name": "坂出市与島港",
+                "Code": "59020",
+                "HighTideDateTime": "2026-04-16T22:39:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T15:40:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "さかいでしよしまこう",
+                "latlon": {
+                  "lat": 34.3833,
+                  "lon": 133.8167
+                }
+              },
+              {
+                "Name": "多度津港",
+                "Code": "59022",
+                "HighTideDateTime": "2026-04-16T22:53:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T16:00:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "たどつこう",
+                "latlon": {
+                  "lat": 34.2833,
+                  "lon": 133.75
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -583,7 +1556,23 @@
             "MaxHeight": {
               "Revise": "更新",
               "TsunamiHeight": "3"
-            }
+            },
+            "Station": [
+              {
+                "Name": "宇和島",
+                "Code": "60001",
+                "HighTideDateTime": "2026-04-16T18:45:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:30:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "うわじま",
+                "latlon": {
+                  "lat": 33.2333,
+                  "lon": 132.55
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -607,7 +1596,107 @@
             "MaxHeight": {
               "Revise": "更新",
               "TsunamiHeight": "3"
-            }
+            },
+            "Station": [
+              {
+                "Name": "大牟田市三池",
+                "Code": "71201",
+                "HighTideDateTime": "2026-04-16T20:40:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T17:00:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "おおむたしみいけ",
+                "latlon": {
+                  "lat": 33.0167,
+                  "lon": 130.4167
+                }
+              },
+              {
+                "Name": "太良町大浦野崎",
+                "Code": "71202",
+                "HighTideDateTime": "2026-04-16T20:45:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T17:00:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "たらちょうおおうらのざき",
+                "latlon": {
+                  "lat": 32.9833,
+                  "lon": 130.2167
+                }
+              },
+              {
+                "Name": "三角",
+                "Code": "71203",
+                "HighTideDateTime": "2026-04-16T20:25:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T16:20:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "みすみ",
+                "latlon": {
+                  "lat": 32.6167,
+                  "lon": 130.45
+                }
+              },
+              {
+                "Name": "島原港",
+                "Code": "71204",
+                "HighTideDateTime": "2026-04-16T20:45:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T16:30:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "しまばらこう",
+                "latlon": {
+                  "lat": 32.7667,
+                  "lon": 130.3667
+                }
+              },
+              {
+                "Name": "八代港",
+                "Code": "71220",
+                "HighTideDateTime": "2026-04-16T20:25:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T16:50:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "やつしろこう",
+                "latlon": {
+                  "lat": 32.5167,
+                  "lon": 130.5667
+                }
+              },
+              {
+                "Name": "天草市本渡港",
+                "Code": "71221",
+                "HighTideDateTime": "2026-04-16T20:19:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T16:20:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "あまくさしほんどこう",
+                "latlon": {
+                  "lat": 32.4333,
+                  "lon": 130.2167
+                }
+              },
+              {
+                "Name": "熊本港",
+                "Code": "71222",
+                "HighTideDateTime": "2026-04-16T20:35:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T16:40:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "くまもとこう",
+                "latlon": {
+                  "lat": 32.75,
+                  "lon": 130.5667
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -631,7 +1720,92 @@
             "MaxHeight": {
               "Revise": "更新",
               "TsunamiHeight": "3"
-            }
+            },
+            "Station": [
+              {
+                "Name": "長崎",
+                "Code": "73001",
+                "HighTideDateTime": "2026-04-16T19:33:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T16:00:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "ながさき",
+                "latlon": {
+                  "lat": 32.7333,
+                  "lon": 129.8667
+                }
+              },
+              {
+                "Name": "口之津",
+                "Code": "73002",
+                "HighTideDateTime": "2026-04-16T20:27:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T16:00:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "くちのつ",
+                "latlon": {
+                  "lat": 32.6,
+                  "lon": 130.2
+                }
+              },
+              {
+                "Name": "福江島福江港",
+                "Code": "73003",
+                "HighTideDateTime": "2026-04-16T19:41:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T15:40:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "ふくえじまふくえこう",
+                "latlon": {
+                  "lat": 32.7,
+                  "lon": 128.85
+                }
+              },
+              {
+                "Name": "佐世保",
+                "Code": "73004",
+                "HighTideDateTime": "2026-04-16T19:54:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T16:30:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "させぼ",
+                "latlon": {
+                  "lat": 33.15,
+                  "lon": 129.7167
+                }
+              },
+              {
+                "Name": "長崎港皇后",
+                "Code": "73020",
+                "HighTideDateTime": "2026-04-16T19:34:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T16:00:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "ながさきこうこうごう",
+                "latlon": {
+                  "lat": 32.7167,
+                  "lon": 129.8333
+                }
+              },
+              {
+                "Name": "平戸市田平港",
+                "Code": "73021",
+                "HighTideDateTime": "2026-04-16T20:21:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T16:40:00+09:00"
+                },
+                "Kana": "ひらどしたびらこう",
+                "latlon": {
+                  "lat": 33.3667,
+                  "lon": 129.5833
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -655,7 +1829,51 @@
             "MaxHeight": {
               "Revise": "更新",
               "TsunamiHeight": "3"
-            }
+            },
+            "Station": [
+              {
+                "Name": "大分",
+                "Code": "75001",
+                "HighTideDateTime": "2026-04-16T19:55:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:40:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "おおいた",
+                "latlon": {
+                  "lat": 33.2667,
+                  "lon": 131.6833
+                }
+              },
+              {
+                "Name": "別府市亀川",
+                "Code": "75002",
+                "HighTideDateTime": "2026-04-16T19:50:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:50:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "べっぷしかめがわ",
+                "latlon": {
+                  "lat": 33.3333,
+                  "lon": 131.5
+                }
+              },
+              {
+                "Name": "別府港",
+                "Code": "75020",
+                "HighTideDateTime": "2026-04-16T19:54:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:50:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "べっぷこう",
+                "latlon": {
+                  "lat": 33.3,
+                  "lon": 131.5
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -678,7 +1896,23 @@
             "MaxHeight": {
               "Revise": "更新",
               "TsunamiHeight": "3"
-            }
+            },
+            "Station": [
+              {
+                "Name": "佐伯市松浦",
+                "Code": "75100",
+                "HighTideDateTime": "2026-04-16T18:36:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:10:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "さいきしまつうら",
+                "latlon": {
+                  "lat": 32.95,
+                  "lon": 131.9667
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -702,7 +1936,51 @@
             "MaxHeight": {
               "Revise": "更新",
               "TsunamiHeight": "3"
-            }
+            },
+            "Station": [
+              {
+                "Name": "中之島",
+                "Code": "77203",
+                "HighTideDateTime": "2026-04-16T18:28:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:30:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "なかのしま",
+                "latlon": {
+                  "lat": 29.85,
+                  "lon": 129.85
+                }
+              },
+              {
+                "Name": "奄美市小湊",
+                "Code": "77204",
+                "HighTideDateTime": "2026-04-16T18:02:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:40:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "あまみしこみなと",
+                "latlon": {
+                  "lat": 28.3167,
+                  "lon": 129.5333
+                }
+              },
+              {
+                "Name": "奄美市名瀬",
+                "Code": "77205",
+                "HighTideDateTime": "2026-04-16T18:32:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T14:40:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "あまみしなぜ",
+                "latlon": {
+                  "lat": 28.4,
+                  "lon": 129.5
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -726,7 +2004,51 @@
             "MaxHeight": {
               "Revise": "更新",
               "TsunamiHeight": "3"
-            }
+            },
+            "Station": [
+              {
+                "Name": "枕崎",
+                "Code": "77302",
+                "HighTideDateTime": "2026-04-16T18:42:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T15:00:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "まくらざき",
+                "latlon": {
+                  "lat": 31.2667,
+                  "lon": 130.3
+                }
+              },
+              {
+                "Name": "鹿児島",
+                "Code": "77303",
+                "HighTideDateTime": "2026-04-16T18:38:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T15:10:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "かごしま",
+                "latlon": {
+                  "lat": 31.6,
+                  "lon": 130.5667
+                }
+              },
+              {
+                "Name": "阿久根",
+                "Code": "77330",
+                "HighTideDateTime": "2026-04-16T19:16:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T15:40:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "あくね",
+                "latlon": {
+                  "lat": 32.0167,
+                  "lon": 130.1833
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -750,7 +2072,65 @@
             "MaxHeight": {
               "Revise": "更新",
               "TsunamiHeight": "3"
-            }
+            },
+            "Station": [
+              {
+                "Name": "那覇",
+                "Code": "80001",
+                "HighTideDateTime": "2026-04-16T18:40:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T15:10:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "なは",
+                "latlon": {
+                  "lat": 26.2167,
+                  "lon": 127.6667
+                }
+              },
+              {
+                "Name": "久米島",
+                "Code": "80002",
+                "HighTideDateTime": "2026-04-16T18:44:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T15:10:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "くめじま",
+                "latlon": {
+                  "lat": 26.3333,
+                  "lon": 126.75
+                }
+              },
+              {
+                "Name": "沖縄市中城湾港",
+                "Code": "80003",
+                "HighTideDateTime": "2026-04-16T18:13:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T15:10:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "おきなわしなかぐすくわんこう",
+                "latlon": {
+                  "lat": 26.3333,
+                  "lon": 127.8333
+                }
+              },
+              {
+                "Name": "南城市安座真",
+                "Code": "80030",
+                "HighTideDateTime": "2026-04-16T18:14:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T15:00:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "なんじょうしあざま",
+                "latlon": {
+                  "lat": 26.1833,
+                  "lon": 127.8167
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -774,7 +2154,65 @@
             "MaxHeight": {
               "Revise": "更新",
               "TsunamiHeight": "1"
-            }
+            },
+            "Station": [
+              {
+                "Name": "釧路",
+                "Code": "10001",
+                "HighTideDateTime": "2026-04-16T14:42:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T16:00:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "くしろ",
+                "latlon": {
+                  "lat": 42.9833,
+                  "lon": 144.3667
+                }
+              },
+              {
+                "Name": "根室市花咲",
+                "Code": "10002",
+                "HighTideDateTime": "2026-04-16T14:44:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T16:10:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "ねむろしはなさき",
+                "latlon": {
+                  "lat": 43.2833,
+                  "lon": 145.5667
+                }
+              },
+              {
+                "Name": "根室港",
+                "Code": "10020",
+                "HighTideDateTime": "2026-04-16T14:32:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T16:40:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "ねむろこう",
+                "latlon": {
+                  "lat": 43.35,
+                  "lon": 145.5833
+                }
+              },
+              {
+                "Name": "浜中町霧多布港",
+                "Code": "10021",
+                "HighTideDateTime": "2026-04-16T14:52:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T16:10:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "はまなかちょうきりたっぷこう",
+                "latlon": {
+                  "lat": 43.0833,
+                  "lon": 145.1167
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -798,7 +2236,51 @@
             "MaxHeight": {
               "Revise": "更新",
               "TsunamiHeight": "1"
-            }
+            },
+            "Station": [
+              {
+                "Name": "浦河",
+                "Code": "10101",
+                "HighTideDateTime": "2026-04-16T14:52:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T16:00:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "うらかわ",
+                "latlon": {
+                  "lat": 42.1667,
+                  "lon": 142.7667
+                }
+              },
+              {
+                "Name": "十勝港",
+                "Code": "10102",
+                "HighTideDateTime": "2026-04-16T14:53:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T16:10:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "とかちこう",
+                "latlon": {
+                  "lat": 42.3,
+                  "lon": 143.3167
+                }
+              },
+              {
+                "Name": "えりも町庶野",
+                "Code": "10103",
+                "HighTideDateTime": "2026-04-16T15:00:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T16:00:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "えりもちょうしょや",
+                "latlon": {
+                  "lat": 42.05,
+                  "lon": 143.3
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -822,7 +2304,51 @@
             "MaxHeight": {
               "Revise": "更新",
               "TsunamiHeight": "1"
-            }
+            },
+            "Station": [
+              {
+                "Name": "むつ市関根浜",
+                "Code": "20102",
+                "HighTideDateTime": "2026-04-16T14:47:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T16:20:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "むつしせきねはま",
+                "latlon": {
+                  "lat": 41.3667,
+                  "lon": 141.2333
+                }
+              },
+              {
+                "Name": "むつ小川原港",
+                "Code": "20120",
+                "HighTideDateTime": "2026-04-16T14:52:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T16:00:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "むつおがわらこう",
+                "latlon": {
+                  "lat": 40.9333,
+                  "lon": 141.3833
+                }
+              },
+              {
+                "Name": "八戸港",
+                "Code": "20121",
+                "HighTideDateTime": "2026-04-16T14:53:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T16:10:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "はちのへこう",
+                "latlon": {
+                  "lat": 40.5333,
+                  "lon": 141.55
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -846,7 +2372,65 @@
             "MaxHeight": {
               "Revise": "更新",
               "TsunamiHeight": "1"
-            }
+            },
+            "Station": [
+              {
+                "Name": "宮古",
+                "Code": "21001",
+                "HighTideDateTime": "2026-04-16T14:59:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T15:40:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "みやこ",
+                "latlon": {
+                  "lat": 39.65,
+                  "lon": 141.9833
+                }
+              },
+              {
+                "Name": "大船渡",
+                "Code": "21002",
+                "HighTideDateTime": "2026-04-16T15:04:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T15:40:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "おおふなと",
+                "latlon": {
+                  "lat": 39.0167,
+                  "lon": 141.75
+                }
+              },
+              {
+                "Name": "釜石",
+                "Code": "21003",
+                "HighTideDateTime": "2026-04-16T15:04:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T15:40:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "かまいし",
+                "latlon": {
+                  "lat": 39.2667,
+                  "lon": 141.8833
+                }
+              },
+              {
+                "Name": "久慈港",
+                "Code": "21020",
+                "HighTideDateTime": "2026-04-16T14:53:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T16:00:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "くじこう",
+                "latlon": {
+                  "lat": 40.2,
+                  "lon": 141.8
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -870,7 +2454,51 @@
             "MaxHeight": {
               "Revise": "更新",
               "TsunamiHeight": "1"
-            }
+            },
+            "Station": [
+              {
+                "Name": "石巻市鮎川",
+                "Code": "22002",
+                "HighTideDateTime": "2026-04-16T15:11:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T15:40:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "いしのまきしあゆかわ",
+                "latlon": {
+                  "lat": 38.3,
+                  "lon": 141.5
+                }
+              },
+              {
+                "Name": "仙台港",
+                "Code": "22021",
+                "HighTideDateTime": "2026-04-16T15:14:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T16:10:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "せんだいこう",
+                "latlon": {
+                  "lat": 38.2667,
+                  "lon": 141
+                }
+              },
+              {
+                "Name": "石巻港",
+                "Code": "22022",
+                "HighTideDateTime": "2026-04-16T15:12:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T16:10:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "いしのまきこう",
+                "latlon": {
+                  "lat": 38.4,
+                  "lon": 141.2667
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -894,7 +2522,37 @@
             "MaxHeight": {
               "Revise": "更新",
               "TsunamiHeight": "1"
-            }
+            },
+            "Station": [
+              {
+                "Name": "いわき市小名浜",
+                "Code": "25002",
+                "HighTideDateTime": "2026-04-16T15:29:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T15:30:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "いわきしおなはま",
+                "latlon": {
+                  "lat": 36.9333,
+                  "lon": 140.9
+                }
+              },
+              {
+                "Name": "相馬",
+                "Code": "25030",
+                "HighTideDateTime": "2026-04-16T15:18:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T16:00:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "そうま",
+                "latlon": {
+                  "lat": 37.8333,
+                  "lon": 140.9667
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -918,7 +2576,37 @@
             "MaxHeight": {
               "Revise": "更新",
               "TsunamiHeight": "1"
-            }
+            },
+            "Station": [
+              {
+                "Name": "大洗",
+                "Code": "30001",
+                "HighTideDateTime": "2026-04-16T15:33:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T15:30:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "おおあらい",
+                "latlon": {
+                  "lat": 36.3,
+                  "lon": 140.5667
+                }
+              },
+              {
+                "Name": "神栖市鹿島港",
+                "Code": "30020",
+                "HighTideDateTime": "2026-04-16T15:34:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T15:20:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "かみすしかしまこう",
+                "latlon": {
+                  "lat": 35.9333,
+                  "lon": 140.7
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -942,7 +2630,37 @@
             "MaxHeight": {
               "Revise": "更新",
               "TsunamiHeight": "1"
-            }
+            },
+            "Station": [
+              {
+                "Name": "広島",
+                "Code": "57001",
+                "HighTideDateTime": "2026-04-16T21:15:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T16:00:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "ひろしま",
+                "latlon": {
+                  "lat": 34.35,
+                  "lon": 132.4667
+                }
+              },
+              {
+                "Name": "呉",
+                "Code": "57002",
+                "HighTideDateTime": "2026-04-16T21:17:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T16:00:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "くれ",
+                "latlon": {
+                  "lat": 34.2333,
+                  "lon": 132.55
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -966,7 +2684,37 @@
             "MaxHeight": {
               "Revise": "更新",
               "TsunamiHeight": "1"
-            }
+            },
+            "Station": [
+              {
+                "Name": "松山",
+                "Code": "60101",
+                "HighTideDateTime": "2026-04-16T20:40:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T15:30:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "まつやま",
+                "latlon": {
+                  "lat": 33.8667,
+                  "lon": 132.7167
+                }
+              },
+              {
+                "Name": "今治市馬島",
+                "Code": "60121",
+                "HighTideDateTime": "2026-04-16T22:19:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T16:00:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "いまばりしうましま",
+                "latlon": {
+                  "lat": 34.1167,
+                  "lon": 132.9833
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -990,7 +2738,79 @@
             "MaxHeight": {
               "Revise": "更新",
               "TsunamiHeight": "1"
-            }
+            },
+            "Station": [
+              {
+                "Name": "下関市彦島弟子待",
+                "Code": "70101",
+                "HighTideDateTime": "2026-04-16T21:15:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T16:30:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "しものせきしひこしまでしまつ",
+                "latlon": {
+                  "lat": 33.9333,
+                  "lon": 130.9333
+                }
+              },
+              {
+                "Name": "徳山",
+                "Code": "70102",
+                "HighTideDateTime": "2026-04-16T20:14:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T15:30:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "とくやま",
+                "latlon": {
+                  "lat": 34.0333,
+                  "lon": 131.8
+                }
+              },
+              {
+                "Name": "宇部港",
+                "Code": "70120",
+                "HighTideDateTime": "2026-04-16T20:25:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T16:00:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "うべこう",
+                "latlon": {
+                  "lat": 33.9333,
+                  "lon": 131.25
+                }
+              },
+              {
+                "Name": "三田尻中関港",
+                "Code": "70121",
+                "HighTideDateTime": "2026-04-16T20:16:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T15:30:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "みたじりなかのせきこう",
+                "latlon": {
+                  "lat": 34.0333,
+                  "lon": 131.5833
+                }
+              },
+              {
+                "Name": "下関港長府",
+                "Code": "70122",
+                "HighTideDateTime": "2026-04-16T20:31:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T16:30:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "しものせきこうちょうふ",
+                "latlon": {
+                  "lat": 34.0167,
+                  "lon": 131
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -1014,7 +2834,51 @@
             "MaxHeight": {
               "Revise": "更新",
               "TsunamiHeight": "1"
-            }
+            },
+            "Station": [
+              {
+                "Name": "北九州市門司",
+                "Code": "71002",
+                "HighTideDateTime": "2026-04-16T20:50:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T16:30:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "きたきゅうしゅうしもじ",
+                "latlon": {
+                  "lat": 33.95,
+                  "lon": 130.95
+                }
+              },
+              {
+                "Name": "苅田港",
+                "Code": "71021",
+                "HighTideDateTime": "2026-04-16T20:28:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T16:20:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "かんだこう",
+                "latlon": {
+                  "lat": 33.8,
+                  "lon": 131
+                }
+              },
+              {
+                "Name": "北九州港青浜",
+                "Code": "71022",
+                "HighTideDateTime": "2026-04-16T20:30:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T16:20:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "きたきゅうしゅうこうあおはま",
+                "latlon": {
+                  "lat": 33.95,
+                  "lon": 131.0167
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -1038,7 +2902,36 @@
             "MaxHeight": {
               "Revise": "更新",
               "TsunamiHeight": "1"
-            }
+            },
+            "Station": [
+              {
+                "Name": "福岡市博多",
+                "Code": "71101",
+                "HighTideDateTime": "2026-04-16T21:21:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T18:00:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "ふくおかしはかた",
+                "latlon": {
+                  "lat": 33.6167,
+                  "lon": 130.4
+                }
+              },
+              {
+                "Name": "北九州港日明",
+                "Code": "71120",
+                "HighTideDateTime": "2026-04-16T21:31:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T16:40:00+09:00"
+                },
+                "Kana": "きたきゅうしゅうこうひあがり",
+                "latlon": {
+                  "lat": 33.9167,
+                  "lon": 130.8833
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -1062,7 +2955,37 @@
             "MaxHeight": {
               "Revise": "更新",
               "TsunamiHeight": "1"
-            }
+            },
+            "Station": [
+              {
+                "Name": "唐津港",
+                "Code": "72020",
+                "HighTideDateTime": "2026-04-16T21:10:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T17:30:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "からつこう",
+                "latlon": {
+                  "lat": 33.4667,
+                  "lon": 129.9667
+                }
+              },
+              {
+                "Name": "玄海町仮屋",
+                "Code": "72030",
+                "HighTideDateTime": "2026-04-16T21:00:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T17:10:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "げんかいちょうかりや",
+                "latlon": {
+                  "lat": 33.4667,
+                  "lon": 129.85
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -1086,7 +3009,51 @@
             "MaxHeight": {
               "Revise": "更新",
               "TsunamiHeight": "1"
-            }
+            },
+            "Station": [
+              {
+                "Name": "対馬比田勝",
+                "Code": "73102",
+                "HighTideDateTime": "2026-04-16T20:38:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T17:40:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "つしまひたかつ",
+                "latlon": {
+                  "lat": 34.65,
+                  "lon": 129.4833
+                }
+              },
+              {
+                "Name": "対馬市厳原",
+                "Code": "73110",
+                "HighTideDateTime": "2026-04-16T20:33:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T17:10:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "つしましいづはら",
+                "latlon": {
+                  "lat": 34.2,
+                  "lon": 129.3
+                }
+              },
+              {
+                "Name": "壱岐島郷ノ浦港",
+                "Code": "73120",
+                "HighTideDateTime": "2026-04-16T20:53:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T17:00:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "いきのしまごうのうらこう",
+                "latlon": {
+                  "lat": 33.75,
+                  "lon": 129.6833
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -1110,7 +3077,23 @@
             "MaxHeight": {
               "Revise": "更新",
               "TsunamiHeight": "1"
-            }
+            },
+            "Station": [
+              {
+                "Name": "苓北町都呂々",
+                "Code": "74000",
+                "HighTideDateTime": "2026-04-16T19:27:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T15:50:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "れいほくまちとろろ",
+                "latlon": {
+                  "lat": 32.4667,
+                  "lon": 130.0333
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -1134,7 +3117,65 @@
             "MaxHeight": {
               "Revise": "更新",
               "TsunamiHeight": "1"
-            }
+            },
+            "Station": [
+              {
+                "Name": "西表島",
+                "Code": "80203",
+                "HighTideDateTime": "2026-04-16T19:24:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T15:40:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "いりおもてじま",
+                "latlon": {
+                  "lat": 24.35,
+                  "lon": 123.75
+                }
+              },
+              {
+                "Name": "与那国島久部良",
+                "Code": "80204",
+                "HighTideDateTime": "2026-04-16T18:45:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T15:40:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "よなぐにじまくぶら",
+                "latlon": {
+                  "lat": 24.45,
+                  "lon": 122.95
+                }
+              },
+              {
+                "Name": "石垣島石垣港",
+                "Code": "80205",
+                "HighTideDateTime": "2026-04-16T18:41:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T15:30:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "いしがきじまいしがきこう",
+                "latlon": {
+                  "lat": 24.3333,
+                  "lon": 124.1667
+                }
+              },
+              {
+                "Name": "宮古島平良",
+                "Code": "80206",
+                "HighTideDateTime": "2026-04-16T18:52:00+09:00",
+                "FirstHeight": {
+                  "ArrivalTime": "2026-04-16T15:40:00+09:00",
+                  "Revise": "更新"
+                },
+                "Kana": "みやこじまひらら",
+                "latlon": {
+                  "lat": 24.8167,
+                  "lon": 125.2833
+                }
+              }
+            ]
           },
           {
             "Area": {
@@ -1275,214 +3316,6 @@
               "Revise": "更新",
               "TsunamiHeight": "\u003C0.2"
             }
-          },
-          {
-            "Area": {
-              "Name": "北海道日本海沿岸北部",
-              "Code": "110"
-            },
-            "Category": {
-              "Kind": {
-                "Name": "津波注意報解除",
-                "Code": "60"
-              },
-              "LastKind": {
-                "Name": "津波注意報",
-                "Code": "62"
-              }
-            }
-          },
-          {
-            "Area": {
-              "Name": "北海道日本海沿岸南部",
-              "Code": "111"
-            },
-            "Category": {
-              "Kind": {
-                "Name": "津波注意報解除",
-                "Code": "60"
-              },
-              "LastKind": {
-                "Name": "津波注意報",
-                "Code": "62"
-              }
-            }
-          },
-          {
-            "Area": {
-              "Name": "オホーツク海沿岸",
-              "Code": "120"
-            },
-            "Category": {
-              "Kind": {
-                "Name": "津波注意報解除",
-                "Code": "60"
-              },
-              "LastKind": {
-                "Name": "津波注意報",
-                "Code": "62"
-              }
-            }
-          },
-          {
-            "Area": {
-              "Name": "秋田県",
-              "Code": "230"
-            },
-            "Category": {
-              "Kind": {
-                "Name": "津波注意報解除",
-                "Code": "60"
-              },
-              "LastKind": {
-                "Name": "津波注意報",
-                "Code": "62"
-              }
-            }
-          },
-          {
-            "Area": {
-              "Name": "山形県",
-              "Code": "240"
-            },
-            "Category": {
-              "Kind": {
-                "Name": "津波注意報解除",
-                "Code": "60"
-              },
-              "LastKind": {
-                "Name": "津波注意報",
-                "Code": "62"
-              }
-            }
-          },
-          {
-            "Area": {
-              "Name": "新潟県上中下越",
-              "Code": "340"
-            },
-            "Category": {
-              "Kind": {
-                "Name": "津波注意報解除",
-                "Code": "60"
-              },
-              "LastKind": {
-                "Name": "津波注意報",
-                "Code": "62"
-              }
-            }
-          },
-          {
-            "Area": {
-              "Name": "佐渡",
-              "Code": "341"
-            },
-            "Category": {
-              "Kind": {
-                "Name": "津波注意報解除",
-                "Code": "60"
-              },
-              "LastKind": {
-                "Name": "津波注意報",
-                "Code": "62"
-              }
-            }
-          },
-          {
-            "Area": {
-              "Name": "富山県",
-              "Code": "350"
-            },
-            "Category": {
-              "Kind": {
-                "Name": "津波注意報解除",
-                "Code": "60"
-              },
-              "LastKind": {
-                "Name": "津波注意報",
-                "Code": "62"
-              }
-            }
-          },
-          {
-            "Area": {
-              "Name": "石川県能登",
-              "Code": "360"
-            },
-            "Category": {
-              "Kind": {
-                "Name": "津波注意報解除",
-                "Code": "60"
-              },
-              "LastKind": {
-                "Name": "津波注意報",
-                "Code": "62"
-              }
-            }
-          },
-          {
-            "Area": {
-              "Name": "石川県加賀",
-              "Code": "361"
-            },
-            "Category": {
-              "Kind": {
-                "Name": "津波注意報解除",
-                "Code": "60"
-              },
-              "LastKind": {
-                "Name": "津波注意報",
-                "Code": "62"
-              }
-            }
-          },
-          {
-            "Area": {
-              "Name": "兵庫県北部",
-              "Code": "520"
-            },
-            "Category": {
-              "Kind": {
-                "Name": "津波注意報解除",
-                "Code": "60"
-              },
-              "LastKind": {
-                "Name": "津波注意報",
-                "Code": "62"
-              }
-            }
-          },
-          {
-            "Area": {
-              "Name": "島根県出雲・石見",
-              "Code": "550"
-            },
-            "Category": {
-              "Kind": {
-                "Name": "津波注意報解除",
-                "Code": "60"
-              },
-              "LastKind": {
-                "Name": "津波注意報",
-                "Code": "62"
-              }
-            }
-          },
-          {
-            "Area": {
-              "Name": "隠岐",
-              "Code": "551"
-            },
-            "Category": {
-              "Kind": {
-                "Name": "津波注意報解除",
-                "Code": "60"
-              },
-              "LastKind": {
-                "Name": "津波注意報",
-                "Code": "62"
-              }
-            }
           }
         ]
       }
@@ -1502,9 +3335,8 @@
     ],
     "Comments": {
       "WarningComment": {
-        "Text": "東日本大震災クラスの津波が来襲します。\n　\nただちに避難してください。\n　\n＜大津波警報＞\n大きな津波が襲い甚大な被害が発生します。\n沿岸部や川沿いにいる人はただちに高台や避難ビルなど安全な場所へ避難してください。\n津波は繰り返し襲ってきます。警報が解除されるまで安全な場所から離れないでください。\n　\n＜津波警報＞\n津波による被害が発生します。\n沿岸部や川沿いにいる人はただちに高台や避難ビルなど安全な場所へ避難してください。\n津波は繰り返し襲ってきます。警報が解除されるまで安全な場所から離れないでください。\n　\n＜津波注意報＞\n海の中や海岸付近は危険です。\n海の中にいる人はただちに海から上がって、海岸から離れてください。\n潮の流れが速い状態が続きますので、注意報が解除されるまで海に入ったり海岸に近づいたりしないようにしてください。\n　\n＜津波予報（若干の海面変動）＞\n若干の海面変動が予想されますが、被害の心配はありません。\n　\n警報が発表された沿岸部や川沿いにいる人はただちに高台や避難ビルなど安全な場所へ避難してください。\n到達予想時刻は、予報区のなかで最も早く津波が到達する時刻です。場所によっては、この時刻よりもかなり遅れて津波が襲ってくることがあります。\n到達予想時刻から津波が最も高くなるまでに数時間以上かかることがありますので、観測された津波の高さにかかわらず、警報が解除されるまで安全な場所から離れないでください。\n　\n場所によっては津波の高さが「予想される津波の高さ」より高くなる可能性があります。\n　\n今後若干の海面変動があるかもしれませんが、被害の心配はありません。"
-      },
-      "FreeFormComment": "［予想される津波の高さの解説］\n予想される津波が高いほど、より甚大な被害が生じます。\n１０ｍ超　　巨大な津波が襲い壊滅的な被害が生じる。木造家屋が全壊・流失し、人は津波による流れに巻き込まれる。\n１０ｍ　　　巨大な津波が襲い甚大な被害が生じる。木造家屋が全壊・流失し、人は津波による流れに巻き込まれる。\n　５ｍ　　　津波が襲い甚大な被害が生じる。木造家屋が全壊・流失し、人は津波による流れに巻き込まれる。\n　３ｍ　　　標高の低いところでは津波が襲い被害が生じる。木造家屋で浸水被害が発生し、人は津波による流れに巻き込まれる。\n　１ｍ　　　海の中では人は速い流れに巻き込まれる。養殖いかだが流失し小型船舶が転覆する。"
+        "Text": "津波と満潮が重なると、津波はより高くなりますので一層厳重な警戒が必要です。"
+      }
     }
   }
 }
